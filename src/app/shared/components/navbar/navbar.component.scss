@@ -1,0 +1,19 @@
+.navItem {
+    
+    margin: 0 6px;
+  .nav-link {
+    padding: 10px;
+    color: #fff !important;
+  }
+}
+
+.navItem:is(:hover, :active, :focus) .nav-link {
+  color: #fff !important;
+  background-color: #dc143c;
+  border-radius: 6px;
+}
+
+
+.navItem.active{
+    color: #dc143c !important;
+}

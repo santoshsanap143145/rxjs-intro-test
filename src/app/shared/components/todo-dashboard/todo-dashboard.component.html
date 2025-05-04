@@ -1,0 +1,14 @@
+<div class="row mt-4 d-flex justify-content-around">
+  <button (click)="onClick('all')" class="btn btn-info">All</button>
+
+  <button (click)="onClick('complete')" class="btn btn-info">Complete</button>
+
+  <button (click)="onClick('incomplete')" class="btn btn-info">
+    Incomplete
+  </button>
+</div>
+<div class="row my-5">
+  <div class="col-md-4 mb-4" *ngFor="let todo of todoArr">
+    <app-todo-card [todobj]="todo"></app-todo-card>
+  </div>
+</div>

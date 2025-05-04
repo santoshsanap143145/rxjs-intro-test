@@ -1,0 +1,19 @@
+<div class="card h-100">
+  <div class="card-header">
+    <h3 class="card-title">
+      <strong>{{ todobj.title }}</strong>
+    </h3>
+  </div>
+  <div class="card-body">
+    <p class="card-text">
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content.
+    </p>
+  </div>
+  <div class="card-footer d-flex justify-content-around">
+    <p class="card-text"><strong>User Id</strong> : {{ todobj.userId }}</p>
+    <p class="card-text">
+      <strong>Is it Completed </strong>: {{ todobj.completed ? "Yes" : "No" }}
+    </p>
+  </div>
+</div>

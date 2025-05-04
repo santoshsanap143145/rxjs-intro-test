@@ -1,0 +1,11 @@
+<!-- <div class="row my-5">
+  <div class="col-md-4 mb-4" *ngFor="let post of todoArr">
+    <app-todo-card [postobject]="post"></app-todo-card>
+  </div>
+</div> -->
+
+<div class="row my-5" *ngIf="postsArr$ | async as arr">
+  <div class="col-md-4 mb-4" *ngFor="let post of arr">
+    <app-post-card [postObj]="post"></app-post-card>
+  </div>
+</div>
